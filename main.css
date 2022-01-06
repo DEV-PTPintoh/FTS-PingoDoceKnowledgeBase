@@ -62,20 +62,20 @@ body {
 
 
 @media (min-width: 350px) {
-    .fly-in-text {
-        font-size: 2vw;
+    .content-area .content h1 {
+        font-size: 3vw;
     }
 }
 
 
 @media (min-width: 1000px) {
-    .fly-in-text {
-        font-size: 1vw;
+    .content-area .content h1 {
+        font-size: 2vw;
     }
 }
 
 @media (min-width: 1200px) {
-    .fly-in-text {
+    .content-area .content h1 {
         font-size: 2vw;
     }
 }

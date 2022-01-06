@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    src: url(/font/FujitsuSansLight.ttf);
+    src: url(./font/FujitsuSansLight.ttf);
     font-family: "FujitsuSansLight";
 }
 
@@ -15,6 +15,7 @@ body {
     background-color: #FFF;
 
 }
+
 
 
 /*INTRO Screen*/

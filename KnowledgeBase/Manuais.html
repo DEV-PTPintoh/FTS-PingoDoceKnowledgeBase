@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive bootstrap landing template">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="images/FTS favicon Green.png">
+
+    <title>Pingo Doce Knowledge Base</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="./css/transition.css" rel="stylesheet">
+
+
+    <style>
+        /* Create a Parallax Effect */
+        .bgimg-2 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+            background-image: url("./images//parallax.png");
+            min-height: 233px;
+        }
+
+        /*--------------------------------------------------------------
+    [ ## Portfolio ]
+--------------------------------------------------------------*/
+        /*-------------------------------------------------
+    [ ### Portfolio Block ]
+*/
+        .portfolio-filter {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .portfolio-filter {
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .portfolio-filter {
+                margin-bottom: 50px;
+            }
+        }
+
+        .portfolio-filter li {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-filter li a {
+            margin: 0;
+            font-weight: 600;
+            font-size: 15px;
+            display: block;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            position: relative;
+            padding: 3px 13px;
+            text-transform: capitalize;
+            color: #2a2a2a;
+        }
+
+        @media (min-width: 576px) {
+            .portfolio-filter li a {
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .portfolio-filter li a {
+                padding: 5px 18px;
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .portfolio-filter li a {
+                padding: 8px 22px;
+                font-size: 20px;
+            }
+        }
+
+        .portfolio-filter li a.active,
+        .portfolio-filter li a:hover {
+            color: white;
+            background-color: #8BC73B;
+        }
+
+        .portfolio-grid {
+            margin-bottom: -30px;
+        }
+
+        @media (min-width: 1400px) {
+            .portfolio-grid {
+                margin-bottom: -30px;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+
+            .portfolio-grid>.col,
+            .portfolio-grid>[class*="col-"] {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+
+        @media (min-width: 1670px) {
+            .portfolio-grid {
+                margin-bottom: -40px;
+                margin-right: -20px;
+                margin-left: -20px;
+            }
+
+            .portfolio-grid>.col,
+            .portfolio-grid>[class*="col-"] {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+        }
+
+        .portfolio-item {
+            position: relative;
+            min-height: 100px;
+            margin-bottom: 30px;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .portfolio-item {
+                margin-bottom: 24px;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .portfolio-item {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (min-width: 1670px) {
+            .portfolio-item {
+                margin-bottom: 40px;
+            }
+        }
+
+        .portfolio-item:hover .overlay-wrapper .overlay,
+        .portfolio-item:hover .portfolio-info .cat,
+        .portfolio-item:hover .portfolio-info .heading {
+            opacity: 1;
+        }
+
+        .portfolio-item:hover .portfolio-info .cat,
+        .portfolio-item:hover .portfolio-info .heading {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        .portfolio-item .portfolio-thumb {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            -ms-flex-align: start;
+            -webkit-box-align: start;
+            align-items: flex-start;
+            margin-bottom: 0px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.075), 0 6px 20px 0 rgba(0, 0, 0, 0.082);
+        }
+
+        .portfolio-item .portfolio-thumb h1 {
+            font-size: 45px;
+            position: absolute;
+            top: 25%;
+            left: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        @media (min-width: 576px) {
+            .portfolio-item .portfolio-thumb h1 {
+                font-size: 40px;
+                position: absolute;
+                top: 17%;
+                left: 0;
+                width: 100%;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+
+
+
+        .portfolio-item .portfolio-thumb>img {
+            width: 100%;
+            -webkit-transition: ease-in-out 0.4s;
+            transition: ease-in-out 0.4s;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .portfolio-item .overlay-wrapper {
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            overflow: hidden;
+        }
+
+        .portfolio-item .overlay-wrapper .overlay {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.795);
+            -webkit-transition: ease-in-out 0.35s;
+            transition: ease-in-out 0.35s;
+            opacity: 0;
+        }
+
+        .portfolio-item .portfolio-info {
+            position: absolute;
+            bottom: 23px;
+            left: 20px;
+        }
+
+        @media (min-width: 576px) {
+            .portfolio-item .portfolio-info {
+                bottom: 26px;
+                left: 30px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1669px) {
+            .portfolio-item .portfolio-info {
+                bottom: 23px;
+                left: 20px;
+            }
+        }
+
+        .portfolio-item .portfolio-info .heading {
+            font-size: 15px;
+            position: relative;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            line-height: 1.2;
+            color: white;
+            opacity: 0;
+            margin-bottom: -20px;
+            -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+        }
+
+        @media (min-width: 1200px) {
+            .portfolio-item .portfolio-info .heading {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 1670px) {
+            .portfolio-item .portfolio-info .heading {
+                font-size: 15px;
+            }
+        }
+
+        .portfolio-item .portfolio-info .heading:hover {
+            color: #8BC73B;
+        }
+
+        .portfolio-item .portfolio-info .cat {
+            color: #e0e0e0;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            opacity: 0;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+        }
+
+        @media (min-width: 576px) {
+            .portfolio-item .portfolio-info .cat {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="site-content">
+
+        <nav
+            class="navbar navbar-expand-lg fixed-top navbar-custom navbar-default navbar-light navbar-custom-dark bg-trans sticky">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="images/Fujitsu-logo Green 8BC73B.png" class="logo logo-white" alt="logo">
+                    <img src="images/Fujitsu-logo Green 8BC73B.png" class="logo logo-dark" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav ml-auto navbar-center" id="mySidenav">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link scroll"><span style="color: #8BC73B;">
+                                    Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Videos.html" class="nav-link scroll"><span style="color: #8BC73B;">
+                                    Videos</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link scroll"><span style="color: #8BC73B;"> Contactos</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Start Portfolio Block
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <section class="section">
+
+            <div id="portfolio-block" class="portfolio-block pd-t-170">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title text-center">
+                                <h2 class="title-main">
+                                    <span>Manuais PD</span>
+                                </h2><!-- /.title-main -->
+                                <a href="./index.html" class="btn btn-custom">Voltar à Home Page</a>
+                            </div><!-- /.section-title -->
+                        </div><!-- /.col-lg-8 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+
+                <div class="container custom-container-1650">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <ul class="portfolio-filter">
+                                <li>
+                                    <a href="#" data-filter="*" class="filter active">All</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-filter=".field" class="filter">Field</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-filter=".staging" class="filter">Staging</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-filter=".rollout" class="filter">Rollout</a>
+                                </li>
+                            </ul>
+                        </div><!-- /.col-12 -->
+                    </div><!-- /.row -->
+
+
+
+                    <div class="row portfolio-grid gutters-40">
+                        <div class="item col-lg-4 col-xl-3 col-md-6 field">
+                            <a class="portfolio-item" href="./Manuais/@JM Docs - Field - Configuração Pinpad - 1.0.pdf">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/Configuração do Pinpad.jpg" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Procedimentos</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Testes</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 field">
+                            <a class="portfolio-item"
+                                href="./Manuais/@JM Docs - Rollout - Substituição da Impressora - 1.1.pdf">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/Substituição Impressora.jpg" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Procedimentos</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Gestão de Assets</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 field">
+                            <a class="portfolio-item"
+                                href="./Manuais/@JM Docs - Field - Troubleshooting Maestro - 1.0.pdf">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/Troublehooting Maestro.jpg" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Troubleshooting</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Contactos Suporte</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 rollout">
+                            <a class="portfolio-item" href="./Manuais/@JM Docs - Rollout - Maestro Field - 2.2.pdf">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/Rollout Field Maestro.jpg" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Instalação</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Hardware</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Testes</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Checklist</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Códigos Scanner</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Layout Loja</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 print rollout">
+                            <a class="portfolio-item"
+                                href="./Manuais/@JM Docs - Rollout - Substituição da Impressora - 1.1.pdf">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/Substituição Impressora.jpg" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Procedimentos</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Testes</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 rollout">
+                            <a class="portfolio-item"
+                                href="./Manuais/@JM Docs - Rollout - Substituição do Disco - 1.0.pdf">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/Substituição do Disco.jpg" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Procedimentos</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Testes</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 rollout">
+                            <a class="portfolio-item"
+                                href="./Manuais/@JM Docs - Rollout - Upgrade de Memória - V1.0.pdf">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/Upgrade Memória.jpg" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Procedimentos</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Testes</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 staging">
+                            <a class="portfolio-item" href="./Manuais/@JM Docs - Staging- Hangar SCO - V1.0.pdf">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/Staging SCO.jpg" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Procedimentos</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Checklist</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 field">
+                            <a class="portfolio-item"
+                                href="./Manuais/SCO-Maestro ISSXXI DataLogic Mag 9300i_400i_800i V2.0.pdf">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/Codigos scanner scale.png" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>9300i</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>9400i</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>9800i</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Activação App</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 print field">
+                            <a class="portfolio-item"
+                                href="./Manuais/@JM Docs - Field - Instalação de Loja Maestro - 2.1.pdf">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/Instalação Loja MAestro.png" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Maestro</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Instalação</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Hardware</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Testes</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Checklist</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Troubleshooting</li>
+                                        </h3>
+                                        <h3 class="heading">
+                                            <li>Contactos Suporte</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 #">
+                            <a class="portfolio-item" href="#">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/wip.jpg" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Work in Progress</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+
+                        <div class="item col-lg-4 col-xl-3 col-md-6 #">
+                            <a class="portfolio-item" href="#">
+                                <figure class="portfolio-thumb">
+                                    <img src="./images/Manuais/wip.jpg" alt="portfolio Item">
+                                </figure><!-- /.portfolio-thumb -->
+                                <div class="overlay-wrapper">
+                                    <div class="overlay"></div><!-- /.overlay -->
+                                    <div class="portfolio-info">
+                                        <p class="cat">Conteúdo:</p>
+                                        <h3 class="heading">
+                                            <li>Work in Progress</li>
+                                        </h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div><!-- /.overlay-wrapper -->
+                            </a><!-- /.portfolio-item -->
+                        </div><!-- /.col-xl-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div>
+        </section>
+        <!--~~./ end portfolio block ~~-->
+
+        <section class="section bg-white" id="features">
+            <div class="container">
+                <div class="row vertical-content">
+
+                    <div class="col-sm-6">
+                        <img src="images/contactos.svg" class="img-fluid" alt="img">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="features-alt">
+                            <div class="feature-alt-icon mb-2">
+                                <i class="pe-7s-phone" style="color: #8BC73B;"></i>
+                                <hr>
+                            </div>
+                            <h3>Contactos Suporte</h3>
+
+                            <div class="question-box">
+                                <h4><span class="text-colored">A.</span>Telefones</h4>
+                                <p>Front Office JM (fixo): <b>217532307 </b></p>
+                                <p>Front Office JM (móvel): <b>966912244 </b></p>
+                            </div>
+                            <div class="question-box">
+                                <h4><span class="text-colored">B.</span>Email</h4>
+                                <p>Front Office JM (email): <b>PTFRONTOFFICEJM@fujitsu.com</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-dark" style="padding-bottom: 66px; padding-top: 66px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center subscribe-form">
+                            <h3>shaping tomorrow with you</h3>
+                            <a href="./From_QR/index-mobile.html"><img src="./images/Fujitsu-logo Green 8BC73B.png"
+                                    width="20%" height="auto" alt=""></a>
+                        </div>
+                    </div> <!-- end Col -->
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p class="copyright">© 2022 - Fujitsu Technology Solutions</p>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </footer>
+
+
+        <!-- js placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!--sticky header-->
+        <script src="js/jquery.sticky.js"></script>
+        <!--common script for all pages-->
+        <script src="js/jquery.app.js"></script>
+
+        <script>
+            //sticky header on scroll
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 50) {
+                    $(".sticky").addClass("is-sticky");
+                } else {
+                    $(".sticky").removeClass("is-sticky");
+                }
+            });
+        </script>
+
+
+        <script src="./jsKb/jquery.js"></script>
+        <script src="./jsKb/imagesloaded.pkgd.min.js"></script>
+        <script src="./jsKb/isotope.pkgd.min.js"></script>
+        <script src="./jsKb/packery-mode.pkgd.min.js"></script>
+        <script src="./jsKb/main.js"></script>
+    </div>
+
+</body>
+
+</html>

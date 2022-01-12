@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive bootstrap landing template">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="images/FTS favicon Green.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>Pingo Doce Knowledge Base</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="./css/transition.css" rel="stylesheet">
+
+    <style>
+        .accordion {
+            background-color: rgb(238, 238, 238);
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            border-style: solid;
+            border-color: #c7c7c7;
+            border-width: 1px;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+            border-color: #8BC73B;
+            border-width: 1px;
+            margin-bottom: 10px;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #8BC73B;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+            border-color: #8BC73B;
+            border-width: 1px;
+            margin-bottom: 10px;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: whitesmoke;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+
+
+</head>
+
+
+<body>
+    <div class="site-content">
+        <nav
+            class="navbar navbar-expand-lg fixed-top navbar-custom navbar-default navbar-light navbar-custom-dark bg-trans sticky">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="images/Fujitsu-logo Green 8BC73B.png" class="logo logo-white" alt="logo">
+                    <img src="images/Fujitsu-logo Green 8BC73B.png" class="logo logo-dark" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav ml-auto navbar-center" id="mySidenav">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link scroll"><span style="color: #8BC73B;">
+                                    Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Manuais.html" class="nav-link scroll"><span style="color: #8BC73B;">
+                                    Manuais</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link scroll"><span style="color: #8BC73B;"> Contactos</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Start Portfolio Block
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+        <section class="section" style="padding-bottom: 66px;">
+
+            <div id="portfolio-block" class="portfolio-block pd-t-170">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title text-center">
+                                <h2 class="title-main">
+                                    <span>ingenico Lane 3000</span>
+                                </h2><!-- /.title-main -->
+                                <a href="./index.html" class="btn btn-custom">Voltar à Home Page</a>
+                            </div><!-- /.section-title -->
+                        </div><!-- /.col-lg-8 -->
+                    </div><!-- /.row -->
+                    <div class="row vertical-content" style="margin-top: -20px;">
+
+                        <div class="col-sm-6">
+                            <img src="images/hw/Ingenico Lane 3000 B.png" class="img-fluid" alt="img">
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="features-alt">
+                                <div class="feature-alt-icon mb-2">
+                                    <i class="pe-7s-look" style="color: #8BC73B;"></i>
+                                    <hr>
+                                </div>
+                                <h3>Terminal overview:</h3>
+                                <p class="text-muted"><span style="color: #8BC73B;">A)</span> Teclas de Navegação</p>
+
+                                <p class="text-muted"><span style="color: #8BC73B;">B)</span> Confirmar entrada</p>
+
+                                <p class="text-muted"><span style="color: #8BC73B;">C)</span> Entrar ou voltar ao menu
+                                    anterior</p>
+
+                                <p class="text-muted"><span style="color: #8BC73B;">D)</span> Cancelar Operação</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- /.container -->
+            </div>
+        </section>
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Start Services Block
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="section bg-white" style="padding-bottom: 33px; padding-top: 66px;" id="ajuda">
+            <div id="service-block" class="services-block pd-t-170">
+                <div class="container container-1200">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <p class="title-alt">Selecione o tema que o poderá ajudar:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row services-items-list gutters-30">
+                        <div class="col-lg-4 col-md-6">
+                            <a class="service-item" onclick="document.getElementById('id01').style.display='block'">
+                                <div class="service-icon">
+                                    <img src="./images/fts icons green.png" alt="Icon" />
+                                </div>
+                                <!-- /.service-icon -->
+                                <h3 class="title" onclick="document.getElementById('id01').style.display='block'">Quick
+                                    Menu</h3>
+                            </a>
+                            <!-- /.service-item -->
+                        </div>
+
+
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-lime">
+                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                        class="w3-button w3-display-topright">&times;</span>
+                                    <h2>Quick Menu</h2>
+                                </header>
+                                <div class="w3-container">
+                                    <br>
+                                    <p>Os terminais Ingenico possuem uma tecla de menu que serve para o mesmo propósito.
+                                    </p>
+                                    <p>Siga a descrição abaixo para uma navegação rápida e para os recursos básicos:</p>
+                                    <table>
+                                        <tr>
+                                            <th>Função</th>
+                                            <th>Teclas</th>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Comprar</td>
+                                            <td>Comece a inserir o valor diretamente a partir do modo inativo</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Cancelar última transação</td>
+                                            <td>Press MENU – 3 – 1</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Cópia da última transação</td>
+                                            <td>Press MENU – 5 – 2</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Cópia da última transação Aprovada</td>
+                                            <td>Press MENU – 5 – 1</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Lista de transações</td>
+                                            <td>Press MENU – 8 – 3</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Imprimir configurações do terminal</td>
+                                            <td>Press MENU – 0 – 8</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Verificar se existem atualizações</td>
+                                            <td>Press MENU – 0 – 2</td>
+
+                                        </tr>
+                                    </table>
+                                    <br>
+                                </div>
+                                <footer class="w3-container w3-light-grey">
+                                    <span style="color: rgb(202, 202, 202);"> Lane 3000</span>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="service-item" onclick="document.getElementById('id02').style.display='block'">
+                                <div class="service-icon">
+                                    <img src="./images/fts icons green.png" alt="Icon" />
+                                </div>
+                                <!-- /.service-icon -->
+                                <h3 class="title" onclick="document.getElementById('id02').style.display='block'">Menu
+                                    Structure</h3>
+                            </a>
+                            <!-- /.service-item -->
+                        </div>
+                        <div id="id02" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-lime">
+                                    <span onclick="document.getElementById('id02').style.display='none'"
+                                        class="w3-button w3-display-topright">&times;</span>
+                                    <h2>Quick Menu</h2>
+                                </header>
+                                <div class="w3-container">
+                                    <p>Os terminais Ingenico possuem uma tecla de menu que serve para o mesmo propósito.
+                                    </p>
+                                    <p>Siga a descrição abaixo para uma navegação rápida e para os recursos básicos:</p>
+                                    <img src="./images/Lane 3000/Tabela A - Lane 3000 .png" alt="">
+                                </div>
+                                <footer class="w3-container w3-light-grey">
+                                    <p>Lane 3000</p>
+                                </footer>
+                            </div>
+                        </div>
+
+
+
+                        <!-- /.col-lg-4 -->
+                        <div class="col-lg-4 col-md-6">
+                            <a class="service-item" href="./troubleshooting.html">
+                                <div class="service-icon">
+                                    <img src="./images/fts icons green.png" alt="Icon" />
+                                </div>
+                                <!-- /.service-icon -->
+                                <h3 class="title">Header icons</h3>
+                            </a>
+                            <!-- /.service-item -->
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div><!-- /.row -->
+
+                </div><!-- /.container -->
+
+            </div>
+        </div>
+
+
+
+        <section class="section bg-white" style="padding-bottom: 150px;">
+
+            <div id="portfolio-block" class="portfolio-block pd-t-170">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="section-title text-center">
+                                <h2 class="title-main">
+                                    <span>Troubleshooting</span>
+                                </h2><!-- /.title-main -->
+                            </div><!-- /.section-title -->
+                        </div><!-- /.col-lg-8 -->
+                    </div><!-- /.row -->
+                    <div class="row" style="margin-top: -60px;">
+                        <div class="col-sm-12 text-center">
+                            <br>
+                            <button class="accordion">Sem rede - Transações apenas em offline</button>
+                            <div class="panel text-left">
+                                <br>
+                                <ol>1) Reinicie o terminal mantendo pressionado o botão amarelo "C" e "#"
+                                    simultaneamente. </ol>
+                                <ol>2) Solte e espere até que o terminal inicie (aprox. 30 segundos).</ol>
+
+                            </div>
+                            <br>
+                            <button class="accordion">O terminal bloqueia. Nenhuma das teclas responde</button>
+                            <div class="panel text-left">
+                                <br>
+                                <ol>1) Reinicie o terminal mantendo pressionado o botão amarelo "C" e "#"
+                                    simultaneamente. </ol>
+                                <ol>2) Solte e espere até que o terminal inicie (aprox. 30 segundos);</ol>
+                                <ol>3) Tente novamente. Se o terminal ainda estiver bloqueado, remova o cabo de
+                                    alimentação ou a bateria e certifique-se de que o visor apaga-se;</ol>
+                                <ol>4) Coloque novamente o cabo de alimentação/bateria.</ol>
+                                <br>
+                            </div>
+                            <br>
+                            <button class="accordion">O terminal parou de funcionar no meio de uma transação. A
+                                tentativa de compra foi aprovada?</button>
+                            <div class="panel text-left">
+                                <br>
+                                <ol>1) Faça uma cópia da última transação <span
+                                        style="color: #8BC73B;">(MENU-5-2)</span>para ver se a compra foi aprovada
+                                    ou não.</ol>
+                                <br>
+                            </div>
+                            <br>
+                            <button class="accordion">Meu terminal está partido e não liga.</button>
+                            <div class="panel text-left">
+                                <br>
+                                <ol>1) Verifique se os cabos estão ligados e a bateria inserida corretamente.</ol>
+                                <br>
+                            </div>
+                            <br>
+                            <button class="accordion">O meu terminal tem uma mensagem de erro "missing keys" e está
+                                inutilizável</button>
+                            <div class="panel text-left">
+                                <br>
+                                <p>Para ctivar o SCO para modo caixa aberta:</p>
+                                <ol>1) Tente verificar se existem atualizações disponíveis no terminal - aceda ao menu
+                                    de configurações e verifique se existem atualizações <span
+                                        style="color: #8BC73B;">(MENU-0-2)</span></ol>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.container -->
+            </div>
+        </section>
+
+
+        <section class="section bg-dark" style="padding-bottom: 66px; padding-top: 66px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center subscribe-form">
+                            <h3>shaping tomorrow with you</h3>
+                            <a href="./From_QR/index-mobile.html"><img src="./images/Fujitsu-logo Green 8BC73B.png"
+                                    width="20%" height="auto" alt=""></a>
+                        </div>
+                    </div> <!-- end Col -->
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p class="copyright">© 2022 - Fujitsu Technology Solutions</p>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </footer>
+
+
+        <!-- js placed at the end of the document so the pages load faster -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!--sticky header-->
+        <script src="js/jquery.sticky.js"></script>
+        <!--common script for all pages-->
+        <script src="js/jquery.app.js"></script>
+
+        <script>
+            //sticky header on scroll
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 50) {
+                    $(".sticky").addClass("is-sticky");
+                } else {
+                    $(".sticky").removeClass("is-sticky");
+                }
+            });
+        </script>
+
+
+        <script src="./jsKb/jquery.js"></script>
+        <script src="./jsKb/imagesloaded.pkgd.min.js"></script>
+        <script src="./jsKb/isotope.pkgd.min.js"></script>
+        <script src="./jsKb/packery-mode.pkgd.min.js"></script>
+        <script src="./jsKb/main.js"></script>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>

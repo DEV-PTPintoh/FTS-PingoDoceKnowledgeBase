@@ -89,7 +89,19 @@
             background-color: #dddddd;
         }
     </style>
+    <style>
+        .responsive {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 
+
+    <style>
+        .w3-modal-content {
+            margin-top: 50px;
+        }
+    </style>
 
 
 </head>
@@ -186,7 +198,8 @@
                 <div class="container container-1200">
                     <div class="row">
                         <div class="col-sm-12 text-center">
-                            <p class="title-alt">Selecione o tema que o poderá ajudar:
+                            <p class="title-alt">Quick Menu; Terminal Menu Structure & Header icons. Selecione o tema
+                                que o poderá ajudar:
                             </p>
                         </div>
                     </div>
@@ -203,7 +216,6 @@
                             </a>
                             <!-- /.service-item -->
                         </div>
-
 
                         <div id="id01" class="w3-modal">
                             <div class="w3-modal-content w3-animate-top w3-card-4">
@@ -275,43 +287,77 @@
                                 </div>
                                 <!-- /.service-icon -->
                                 <h3 class="title" onclick="document.getElementById('id02').style.display='block'">Menu
-                                    Structure</h3>
+                                    structure</h3>
                             </a>
                             <!-- /.service-item -->
                         </div>
+
                         <div id="id02" class="w3-modal">
                             <div class="w3-modal-content w3-animate-top w3-card-4">
                                 <header class="w3-container w3-lime">
                                     <span onclick="document.getElementById('id02').style.display='none'"
                                         class="w3-button w3-display-topright">&times;</span>
-                                    <h2>Quick Menu</h2>
+                                    <h2>Menu</h2>
                                 </header>
                                 <div class="w3-container">
-                                    <p>Os terminais Ingenico possuem uma tecla de menu que serve para o mesmo propósito.
-                                    </p>
-                                    <p>Siga a descrição abaixo para uma navegação rápida e para os recursos básicos:</p>
-                                    <img src="./images/Lane 3000/Tabela A - Lane 3000 .png" alt="">
+                                    <br>
+                                    <p>Terminal menu structure</p>
+                                    <img src="./images/Lane 3000/Tabela B - Lane 3000 .png" alt="Nature"
+                                        class="responsive" width="700" height="500">
+                                    <br>
+                                    <br>
                                 </div>
                                 <footer class="w3-container w3-light-grey">
-                                    <p>Lane 3000</p>
+                                    <span style="color: rgb(202, 202, 202);"> Lane 3000</span>
                                 </footer>
                             </div>
                         </div>
+                        <!-- /.col-lg-4 -->
 
 
 
                         <!-- /.col-lg-4 -->
                         <div class="col-lg-4 col-md-6">
-                            <a class="service-item" href="./troubleshooting.html">
+                            <a class="service-item" onclick="document.getElementById('id03').style.display='block'">
                                 <div class="service-icon">
                                     <img src="./images/fts icons green.png" alt="Icon" />
                                 </div>
                                 <!-- /.service-icon -->
-                                <h3 class="title">Header icons</h3>
+                                <h3 class="title" onclick="document.getElementById('id03').style.display='block'">Header
+                                    icons</h3>
                             </a>
                             <!-- /.service-item -->
                         </div>
+
+                        <div id="id03" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-lime">
+                                    <span onclick="document.getElementById('id03').style.display='none'"
+                                        class="w3-button w3-display-topright">&times;</span>
+                                    <h2>Header
+                                        icons</h2>
+                                </header>
+                                <div class="w3-container">
+                                    <br>
+
+                                    <p>O cabeçalho pode conter vários ícones diferentes que
+                                        indicam diferentes status no terminal.</p>
+                                    <p>Dentro da caixa vermelha é onde encontrará os ícones de cabeçalho</p>
+                                    <img src="./images/Lane 3000/Tabela D - Lane 3000 .png" alt="Nature"
+                                        class="responsive" width="400" height="200">
+                                    <p>Lista de ícones de cabeçalho e seu significado:</p>
+                                    <img src="./images/Lane 3000/Tabela C - Lane 3000 .png" alt="Nature"
+                                        class="responsive" width="600" height="400">
+                                    <br>
+                                    <br>
+                                </div>
+                                <footer class="w3-container w3-light-grey">
+                                    <span style="color: rgb(202, 202, 202);"> Lane 3000</span>
+                                </footer>
+                            </div>
+                        </div>
                         <!-- /.col-lg-4 -->
+
                     </div><!-- /.row -->
 
                 </div><!-- /.container -->
@@ -464,6 +510,30 @@
                 });
             }
         </script>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
 
     </div>
 </body>
